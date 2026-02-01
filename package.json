@@ -2,8 +2,8 @@
   "name": "bilderbuch",
   "version": "0.0.1",
   "description": "A Quasar Project",
-  "productName": "Quasar App",
-  "author": "Michel Binder <mail@cubmic.ch>",
+  "productName": "Bilderbuch",
+  "author": "Anina Binder <anina.binder.10@icloud.com>",
   "type": "module",
   "private": true,
   "scripts": {
