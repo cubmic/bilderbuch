@@ -30,6 +30,13 @@
       <div
         v-for="(element, index) in page.elements"
         :key="index"
+        class="animate__animated"
+        :class="
+          element.effects
+            ?.filter((o) => o.left < left)
+            ?.map((o) => o.effect)
+            .join(' ') || ''
+        "
         :style="{
           position: 'absolute',
           zIndex: element.zIndex,
@@ -47,6 +54,7 @@
 </template>
 
 <script setup>
+import 'animate.css'
 import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 const route = useRoute()
@@ -112,6 +120,16 @@ const pages = [
         left: 1200,
         top: -75,
         img: 'src/assets/baum.png',
+        effects: [
+          {
+            left: 800,
+            effect: 'animate__flipInY',
+          },
+          {
+            left: 1200,
+            effect: 'animate__hinge',
+          },
+        ],
       },
     ],
   },
