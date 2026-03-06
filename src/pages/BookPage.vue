@@ -28,17 +28,20 @@
 
     <div class="container" ref="containerRef">
       <div
-        v-for="element in page.elements"
-        :key="element.id"
+        v-for="(element, index) in page.elements"
+        :key="index"
         :style="{
           position: 'absolute',
           zIndex: element.zIndex,
           top: `${element.top}px`,
-          left: `${left * element.speed}px`,
+          left: `${left * element.speed + element.left}px`,
         }"
       >
         <img :src="element.img" />
       </div>
+    </div>
+    <div class="textblock">
+      {{ text }}
     </div>
   </q-page>
 </template>
@@ -59,24 +62,56 @@ const page = computed(() => {
   return pages[actualPage.value - 1]
 })
 
+const text = computed(() => {
+  return (
+    page.value.texts?.find((o) => {
+      return o.left > left.value
+    })?.text || ''
+  )
+})
+
 const pages = [
   {
     title: 'Seite 1',
     color: 'rgb(36, 149, 153)',
+    texts: [
+      {
+        left: 200,
+        text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.`,
+      },
+      {
+        left: 600,
+        text: `Monsen`,
+      },
+    ],
     elements: [
       {
-        id: 1,
         speed: 0,
         zIndex: 1,
+        left: 0,
         top: 0,
         img: 'src/assets/berg.png',
       },
       {
-        id: 2,
+        speed: 0,
+        zIndex: 1,
+        left: 1280,
+        top: 0,
+        img: 'src/assets/berg.png',
+      },
+      {
         speed: 0.5,
         zIndex: 2,
+        left: 0,
         top: 50,
         img: 'src/assets/hirsch.png',
+      },
+      {
+        speed: 0.25,
+        zIndex: 2,
+        left: 1200,
+        top: -75,
+        img: 'src/assets/baum.png',
       },
     ],
   },
@@ -110,5 +145,9 @@ h1 {
   height: 400px;
   overflow-x: scroll;
   overflow-y: hidden;
+}
+.textblock {
+  margin: 20px;
+  width: 400px;
 }
 </style>
