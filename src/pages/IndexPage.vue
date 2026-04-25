@@ -3,7 +3,7 @@
     <div class="inhalt">
       <img
         alt="Quasar logo"
-        src="src/assets/Haeschen.png"
+        src="images/Haeschen.png"
         class="cat"
       />
       <p>

@@ -103,7 +103,7 @@ const pages = [
         zIndex: 0,
         left: 170,
         top: 140,
-        img: 'src/assets/Schneelandschaft.png',
+        img: 'images/Schneelandschaft.png',
         width: 300
       },
       {
@@ -111,7 +111,7 @@ const pages = [
         zIndex: 2,
         left: 715,
         top: 50,
-        img: 'src/assets/Lampe.png',
+        img: 'images/Lampe.png',
         width: 100
       },
       {
@@ -119,7 +119,7 @@ const pages = [
         zIndex: 1,
         left: 60,
         top: 50,
-        img: 'src/assets/Katze_am_Fenster.png',
+        img: 'images/Katze_am_Fenster.png',
         width: 700,
       },
       {
@@ -127,7 +127,7 @@ const pages = [
         zIndex: 1,
         left: 715,
         top: 50,
-        img: 'src/assets/Katzengesicht.png',
+        img: 'images/Katzengesicht.png',
         width: 500,
         effects: [
           {
@@ -141,7 +141,7 @@ const pages = [
         zIndex: 0,
         left: 1150,
         top: 50,
-        img: 'src/assets/Schneelandschaft.png',
+        img: 'images/Schneelandschaft.png',
         width: 1000
       },
       /*
@@ -150,7 +150,7 @@ const pages = [
         zIndex: 2,
         left: 1200,
         top: -75,
-        img: 'src/assets/baum.png',
+        img: 'images/baum.png',
         width: 1000,
         effects: [
           {
@@ -175,7 +175,7 @@ const pages = [
         zIndex: 1,
         left: 1050,
         top: 50,
-        img: 'src/assets/Baer1.png',
+        img: 'images/Baer1.png',
         width: 100
       },
       {
@@ -183,7 +183,7 @@ const pages = [
         zIndex: 1,
         left: 2020,
         top: 50,
-        img: 'src/assets/Baer2.png',
+        img: 'images/Baer2.png',
         width: 100
       },
       {
@@ -191,7 +191,7 @@ const pages = [
         zIndex: 1,
         left: 1150,
         top: 0,
-        img: 'src/assets/Fuchs1.png',
+        img: 'images/Fuchs1.png',
         width: 70
       },
       {
@@ -199,7 +199,7 @@ const pages = [
         zIndex: 1,
         left: 2120,
         top: 0,
-        img: 'src/assets/Fuchs2.png',
+        img: 'images/Fuchs2.png',
         width: 70
       },
       {
@@ -207,7 +207,7 @@ const pages = [
         zIndex: 0,
         left: 640,
         top: 0,
-        img: 'src/assets/Curlingbahn.png',
+        img: 'images/Curlingbahn.png',
         width: 1000
       },
       {
@@ -215,7 +215,7 @@ const pages = [
         zIndex: 0,
         left: 1600,
         top: 0,
-        img: 'src/assets/Curlingbahn.png',
+        img: 'images/Curlingbahn.png',
         width: 1000
       },
       {
@@ -223,7 +223,7 @@ const pages = [
         zIndex: 0,
         left: 730,
         top: 90,
-        img: 'src/assets/Katze4.png',
+        img: 'images/Katze4.png',
         width: 150
       },
       {
@@ -231,7 +231,7 @@ const pages = [
         zIndex: 1,
         left: 1200,
         top: 50,
-        img: 'src/assets/Hirsch1.png',
+        img: 'images/Hirsch1.png',
         width: 100
       },
       {
@@ -239,7 +239,7 @@ const pages = [
         zIndex: 1,
         left: 2170,
         top: 50,
-        img: 'src/assets/Hirsch2.png',
+        img: 'images/Hirsch2.png',
         width: 100
       },
       {
@@ -247,7 +247,7 @@ const pages = [
         zIndex: 1,
         left: 1100,
         top: 200,
-        img: 'src/assets/Curlingstein1.png',
+        img: 'images/Curlingstein1.png',
         width: 50
       },
       {
@@ -255,7 +255,7 @@ const pages = [
         zIndex: 1,
         left: 1350,
         top: 250,
-        img: 'src/assets/Curlingstein2.png',
+        img: 'images/Curlingstein2.png',
         width: 50
       },
       {
@@ -263,7 +263,7 @@ const pages = [
         zIndex: 3,
         left: 1350,
         top: 50,
-        img: 'src/assets/Katze3.png',
+        img: 'images/Katze3.png',
         width: 500
       },
     ],
