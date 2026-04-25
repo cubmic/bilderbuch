@@ -120,7 +120,7 @@ const pages = [
         left: 60,
         top: 50,
         img: 'src/assets/Katze_am_Fenster.png',
-        width: 700
+        width: 700,
       },
       {
         speed: 0,
@@ -128,7 +128,13 @@ const pages = [
         left: 715,
         top: 50,
         img: 'src/assets/Katzengesicht.png',
-        width: 500
+        width: 500,
+        effects: [
+          {
+            left: 400,
+            effect: 'animate__flipInY'
+          }
+        ]
       },
       {
         speed: 0,
@@ -138,6 +144,7 @@ const pages = [
         img: 'src/assets/Schneelandschaft.png',
         width: 1000
       },
+      /*
       {
         speed: 0.25,
         zIndex: 2,
@@ -156,6 +163,7 @@ const pages = [
           },
         ],
       },
+      */
     ],
   },
   {
