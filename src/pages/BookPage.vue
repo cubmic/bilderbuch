@@ -41,10 +41,15 @@
           position: 'absolute',
           zIndex: element.zIndex,
           top: `${element.top}px`,
-          left: `${left * element.speed + element.left}px`,
+          left: `${left * element.speed + element.left}px`
         }"
       >
-        <img :src="element.img" />
+        <img
+          :src="element.img"
+          :style="{
+            width: `${element.width}px`
+          }"
+        />
       </div>
     </div>
     <div class="textblock">
@@ -95,24 +100,43 @@ const pages = [
     elements: [
       {
         speed: 0,
-        zIndex: 1,
-        left: 0,
-        top: 0,
-        img: 'src/assets/berg.png',
+        zIndex: 0,
+        left: 170,
+        top: 140,
+        img: 'src/assets/Schneelandschaft.png',
+        width: 300
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 715,
+        top: 50,
+        img: 'src/assets/Lampe.png',
+        width: 100
       },
       {
         speed: 0,
         zIndex: 1,
-        left: 1280,
-        top: 0,
-        img: 'src/assets/berg.png',
+        left: 60,
+        top: 50,
+        img: 'src/assets/Katze_am_Fenster.png',
+        width: 700
       },
       {
-        speed: 0.5,
-        zIndex: 2,
-        left: 0,
+        speed: 0,
+        zIndex: 1,
+        left: 715,
         top: 50,
-        img: 'src/assets/hirsch.png',
+        img: 'src/assets/Katzengesicht.png',
+        width: 500
+      },
+      {
+        speed: 0,
+        zIndex: 0,
+        left: 1150,
+        top: 50,
+        img: 'src/assets/Schneelandschaft.png',
+        width: 1000
       },
       {
         speed: 0.25,
@@ -120,6 +144,7 @@ const pages = [
         left: 1200,
         top: -75,
         img: 'src/assets/baum.png',
+        width: 1000,
         effects: [
           {
             left: 800,
@@ -136,6 +161,104 @@ const pages = [
   {
     title: 'Seite 2',
     color: 'rgb(167, 109, 203)',
+    elements: [
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 1050,
+        top: 50,
+        img: 'src/assets/Baer1.png',
+        width: 100
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 2020,
+        top: 50,
+        img: 'src/assets/Baer2.png',
+        width: 100
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 1150,
+        top: 0,
+        img: 'src/assets/Fuchs1.png',
+        width: 70
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 2120,
+        top: 0,
+        img: 'src/assets/Fuchs2.png',
+        width: 70
+      },
+      {
+        speed: 0,
+        zIndex: 0,
+        left: 640,
+        top: 0,
+        img: 'src/assets/Curlingbahn.png',
+        width: 1000
+      },
+      {
+        speed: 0,
+        zIndex: 0,
+        left: 1600,
+        top: 0,
+        img: 'src/assets/Curlingbahn.png',
+        width: 1000
+      },
+      {
+        speed: 0,
+        zIndex: 0,
+        left: 730,
+        top: 90,
+        img: 'src/assets/Katze4.png',
+        width: 150
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 1200,
+        top: 50,
+        img: 'src/assets/Hirsch1.png',
+        width: 100
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 2170,
+        top: 50,
+        img: 'src/assets/Hirsch2.png',
+        width: 100
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 1100,
+        top: 200,
+        img: 'src/assets/Curlingstein1.png',
+        width: 50
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 1350,
+        top: 250,
+        img: 'src/assets/Curlingstein2.png',
+        width: 50
+      },
+      {
+        speed: 0,
+        zIndex: 3,
+        left: 1450,
+        top: 50,
+        img: 'src/assets/Katze3.png',
+        width: 500
+      },
+    ],
   },
   {
     title: 'Seite 3',
