@@ -163,7 +163,7 @@ const pages = [
     color: 'rgb(167, 109, 203)',
     elements: [
       {
-        speed: 0,
+        speed: 0.05,
         zIndex: 1,
         left: 1050,
         top: 50,
@@ -171,7 +171,7 @@ const pages = [
         width: 100
       },
       {
-        speed: 0,
+        speed: 0.05,
         zIndex: 1,
         left: 2020,
         top: 50,
@@ -179,7 +179,7 @@ const pages = [
         width: 100
       },
       {
-        speed: 0,
+        speed: 0.05,
         zIndex: 1,
         left: 1150,
         top: 0,
@@ -187,7 +187,7 @@ const pages = [
         width: 70
       },
       {
-        speed: 0,
+        speed: 0.05,
         zIndex: 1,
         left: 2120,
         top: 0,
@@ -211,7 +211,7 @@ const pages = [
         width: 1000
       },
       {
-        speed: 0,
+        speed: 0.05,
         zIndex: 0,
         left: 730,
         top: 90,
@@ -219,7 +219,7 @@ const pages = [
         width: 150
       },
       {
-        speed: 0,
+        speed: 0.05,
         zIndex: 1,
         left: 1200,
         top: 50,
@@ -227,7 +227,7 @@ const pages = [
         width: 100
       },
       {
-        speed: 0,
+        speed: 0.05,
         zIndex: 1,
         left: 2170,
         top: 50,
@@ -251,9 +251,9 @@ const pages = [
         width: 50
       },
       {
-        speed: 0,
+        speed: 0.1,
         zIndex: 3,
-        left: 1450,
+        left: 1350,
         top: 50,
         img: 'src/assets/Katze3.png',
         width: 500
@@ -286,6 +286,16 @@ h1 {
   height: 400px;
   overflow-x: scroll;
   overflow-y: hidden;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 .textblock {
   margin: 20px;
