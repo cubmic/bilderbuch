@@ -189,12 +189,13 @@ const pages = [
         img: 'src/assets/Berge3.png',
         width: 800
       },
+      /*
       {
         speed: 0.25,
         zIndex: 2,
         left: 1200,
         top: -75,
-        img: 'src/assets/baum.png',
+        img: 'images/baum.png',
         width: 1000,
         effects: [
           {
@@ -207,6 +208,7 @@ const pages = [
           },
         ],
       },
+      */
     ],
   },
   {
@@ -244,7 +246,7 @@ const pages = [
         zIndex: 1,
         left: 400,
         top: 50,
-        img: 'src/assets/Baer1.png',
+        img: 'images/Baer1.png',
         width: 100
       },
       {
@@ -252,7 +254,7 @@ const pages = [
         zIndex: 1,
         left: 1255,
         top: 50,
-        img: 'src/assets/Baer2.png',
+        img: 'images/Baer2.png',
         width: 100
       },
       {
@@ -300,7 +302,7 @@ const pages = [
         zIndex: 1,
         left: 590,
         top: 50,
-        img: 'src/assets/Hirsch1.png',
+        img: 'images/Hirsch1.png',
         width: 100
       },
       {
@@ -308,7 +310,7 @@ const pages = [
         zIndex: 1,
         left: 2170,
         top: 50,
-        img: 'src/assets/Hirsch2.png',
+        img: 'images/Hirsch2.png',
         width: 100
       },
       {
@@ -316,7 +318,7 @@ const pages = [
         zIndex: 1,
         left: 500,
         top: 200,
-        img: 'src/assets/Curlingstein1.png',
+        img: 'images/Curlingstein1.png',
         width: 50
       },
       {
