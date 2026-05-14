@@ -41,7 +41,11 @@
           position: 'absolute',
           zIndex: element.zIndex,
           top: `${element.top}px`,
-          left: `${left * element.speed + element.left}px`
+          left: `${left * element.speed + element.left}px`,
+          transform: element.flipX ? 'scaleX(-1)' : '',
+          filter: element.shadow ? `drop-shadow(${left * element.speed / 2}px 30px 10px rgba(0,0,0,0.5))` : '',
+          borderRadius: element.round ? '50%' : '',
+          overflow: element.round ? 'hidden' : ''
         }"
       >
         <img
@@ -90,53 +94,100 @@ const pages = [
     texts: [
       {
         left: 200,
-        text: `Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.`,
+        text: `Minka lebte in einer Welt, in der Tiere sprechen, spielen und zusammenleben wie Menschen. Sie war eine kleine, weiße Katze mit weichem Fell und leuchtend blauen Augen.`,
       },
       {
         left: 600,
-        text: `Monsen`,
+        text: `Am liebsten saß sie am Fenster ihres gemütlichen Hauses. Von dort aus konnte sie die verschneite Landschaft sehen.`,
+      },
+      {
+        left: 1000,
+        text: `An diesem Tag fielen dicke Schneeflocken vom Himmel. Sie tanzten in der Luft, drehten sich und glitzerten im Licht. Minka beobachtete jede einzelne ganz genau.`,
+      },
+      {
+        left: 1500,
+        text: `„Wie schön der Winter ist“, murmelte sie leise und legte ihre Pfoten ans Fenster.`,
+      },
+      {
+        left: 2000,
+        text: `Doch plötzlich entdeckte sie in der Ferne etwas Neues: Auf einer großen Eisfläche bewegten sich Tiere hin und her. Neugierig sprang Minka vom Fenster und lief hinaus in den Schnee.`,
       },
     ],
     elements: [
       {
-        speed: 0,
+        speed: 0.15,
         zIndex: 0,
-        left: 170,
-        top: 140,
+        left: 570,
+        top: 65,
         img: 'src/assets/Schneelandschaft.png',
+        width: 350,
+        flipX: true
+      },
+      {
+        speed: 0.15,
+        zIndex: 0,
+        left: 720,
+        top: 65,
+        img: 'src/assets/Schneelandschaft.png',
+        width: 350
+      },
+      {
+        speed: -0.2,
+        zIndex: 2,
+        left: 1000,
+        top: 60,
+        img: 'src/assets/Lampe.png',
+        width: 300,
+        shadow: true
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 500,
+        top: -100,
+        img: 'src/assets/Katze_am_Fenster.png',
+        width: 900
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 1350,
+        top: 150,
+        img: 'src/assets/ornamente.png',
         width: 300
       },
       {
         speed: 0,
-        zIndex: 2,
-        left: 715,
-        top: 50,
-        img: 'src/assets/Lampe.png',
-        width: 100
-      },
-      {
-        speed: 0,
         zIndex: 1,
-        left: 60,
-        top: 50,
-        img: 'src/assets/Katze_am_Fenster.png',
-        width: 700
-      },
-      {
-        speed: 0,
-        zIndex: 1,
-        left: 715,
-        top: 50,
+        left: 1750,
+        top: 55,
         img: 'src/assets/Katzengesicht.png',
-        width: 500
+        width: 300
       },
       {
         speed: 0,
-        zIndex: 0,
-        left: 1150,
-        top: 50,
+        zIndex: 1,
+        left: 2150,
+        top: 150,
+        img: 'src/assets/ornamente.png',
+        width: 300
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 2350,
+        top: 0,
         img: 'src/assets/Schneelandschaft.png',
-        width: 1000
+        width: 1100,
+        shadow: true
+      },
+      {
+        speed: 0.2,
+        zIndex: 0,
+        left: 2350,
+        top: -100,
+        img: 'src/assets/Berge3.png',
+        width: 800
       },
       {
         speed: 0.25,
@@ -161,11 +212,37 @@ const pages = [
   {
     title: 'Seite 2',
     color: 'rgb(167, 109, 203)',
+    texts: [
+      {
+        left: 200,
+        text: `Als Minka näher kam, sah sie, was die Tiere taten. Sie spielten Curling auf einem gefrorenen See. Große Steine glitten über das Eis, während andere Tiere eifrig davor herfegten.`,
+      },
+      {
+        left: 600,
+        text: `Es sah spannend aus!`,
+      },
+      {
+        left: 1000,
+        text: `Minka setzte sich an den Rand und beobachtete das Spiel. Schließlich fasste sie sich ein Herz und rief: „Darf ich auch mitspielen?“`,
+      },
+      {
+        left: 1500,
+        text: `Doch kaum hatte sie das gesagt, begannen einige Tiere zu lachen.`,
+      },
+      {
+        left: 2000,
+        text: `„Du bist viel zu klein!“ rief ein Elch. „Der Stein ist schwerer als du!“ brummte ein Bär.`,
+      },
+      {
+        left: 2500,
+        text: `Minka senkte den Kopf. Ihr Herz fühlte sich schwer an. Aber tief in ihr drin wuchs ein Gedanke: Ich werde es ihnen zeigen.`,
+      },
+    ],
     elements: [
       {
         speed: 0.05,
         zIndex: 1,
-        left: 1050,
+        left: 400,
         top: 50,
         img: 'src/assets/Baer1.png',
         width: 100
@@ -173,7 +250,7 @@ const pages = [
       {
         speed: 0.05,
         zIndex: 1,
-        left: 2020,
+        left: 1255,
         top: 50,
         img: 'src/assets/Baer2.png',
         width: 100
@@ -181,47 +258,47 @@ const pages = [
       {
         speed: 0.05,
         zIndex: 1,
-        left: 1150,
-        top: 0,
+        left: 530,
+        top: 20,
         img: 'src/assets/Fuchs1.png',
         width: 70
       },
       {
         speed: 0.05,
         zIndex: 1,
-        left: 2120,
-        top: 0,
+        left: 1400,
+        top: 20,
         img: 'src/assets/Fuchs2.png',
         width: 70
       },
       {
         speed: 0,
         zIndex: 0,
-        left: 640,
-        top: 0,
+        left: 60,
+        top: -200,
         img: 'src/assets/Curlingbahn.png',
         width: 1000
       },
       {
         speed: 0,
         zIndex: 0,
-        left: 1600,
-        top: 0,
+        left: 950,
+        top: -200,
         img: 'src/assets/Curlingbahn.png',
         width: 1000
       },
       {
         speed: 0.05,
         zIndex: 0,
-        left: 730,
+        left: 130,
         top: 90,
         img: 'src/assets/Katze4.png',
-        width: 150
+        width: 200
       },
       {
         speed: 0.05,
         zIndex: 1,
-        left: 1200,
+        left: 590,
         top: 50,
         img: 'src/assets/Hirsch1.png',
         width: 100
@@ -237,7 +314,7 @@ const pages = [
       {
         speed: 0,
         zIndex: 1,
-        left: 1100,
+        left: 500,
         top: 200,
         img: 'src/assets/Curlingstein1.png',
         width: 50
@@ -245,18 +322,34 @@ const pages = [
       {
         speed: 0,
         zIndex: 1,
-        left: 1350,
-        top: 250,
+        left: 670,
+        top: 190,
         img: 'src/assets/Curlingstein2.png',
+        width: 50
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 730,
+        top: 230,
+        img: 'src/assets/Curlingstein3.png',
+        width: 50
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 570,
+        top: 180,
+        img: 'src/assets/Curlingstein4.png',
         width: 50
       },
       {
         speed: 0.1,
         zIndex: 3,
-        left: 1350,
-        top: 50,
+        left: 530,
+        top: -290,
         img: 'src/assets/Katze3.png',
-        width: 500
+        width: 870
       },
     ],
   },
