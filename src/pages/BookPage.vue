@@ -65,7 +65,7 @@
 
 <script setup>
 import 'animate.css'
-import { ref, computed, onMounted } from 'vue'
+import { ref, watch, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 const route = useRoute()
 
@@ -87,6 +87,13 @@ const text = computed(() => {
     })?.text || ''
   )
 })
+
+watch(
+  () => actualPage.value,
+  () => {
+    containerRef.value.scrollLeft = 0
+  }
+)
 
 const pages = [
   {
@@ -397,14 +404,17 @@ const pages = [
   {
     title: 'Heimliches Training',
     color: 'rgb(203, 183, 109)',
+    elements: []
   },
   {
     title: 'Der große Versuch',
     color: 'rgb(118, 218, 134)',
+    elements: []
   },
   {
     title: 'Minka zeigt, was sie kann',
     color: 'rgb(209, 80, 181)',
+    elements: []
   },
 ]
 
