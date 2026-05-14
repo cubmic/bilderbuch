@@ -1,17 +1,14 @@
 <template>
   <q-page class="flex flex-center">
     <div class="inhalt">
+      <h1>Minka die Curlingkatze</h1>
       <img
         alt="Quasar logo"
-        src="images/Haeschen.png"
-        class="cat"
+        src="images/Hase.png"
+        class="hase"
       />
       <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-        sed diam nonumy eirmod tempor invidunt ut labore et dolore
-        magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-        et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-        no sea takimata sanctus est Lorem ipsum dolor sit amet...
+        Klicke auf Start um zu erfahren wie Minka die Curlingwelt endeckt...
       </p>
       <q-btn color="primary" label="start" to="/page/1" />
     </div>
@@ -23,11 +20,16 @@
 </script>
 
 <style lang="css" scoped>
-.inhalt {
-  width: 400px;
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
 }
-.cat {
-  width: 200px;
+.inhalt {
+  width: 500px;
+  font-size: 20px;
+}
+.hase {
+  width: 300px;
   float: right;
   transform: scaleX(-1);
 }

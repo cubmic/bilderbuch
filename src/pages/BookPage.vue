@@ -55,6 +55,7 @@
           }"
         />
       </div>
+      <div :style="`position:absolute; left:${Math.max(...page.elements.map(o => o.left + o.width)) + 600}px;`">&nbsp;</div>
     </div>
     <div class="textblock">
       {{ text }}
@@ -89,7 +90,7 @@ const text = computed(() => {
 
 const pages = [
   {
-    title: 'Seite 1',
+    title: "Minka's Endeckung",
     color: 'rgb(36, 149, 153)',
     texts: [
       {
@@ -119,7 +120,7 @@ const pages = [
         zIndex: 0,
         left: 570,
         top: 65,
-        img: 'src/assets/Schneelandschaft.png',
+        img: 'images/Schneelandschaft.png',
         width: 350,
         flipX: true
       },
@@ -128,7 +129,7 @@ const pages = [
         zIndex: 0,
         left: 720,
         top: 65,
-        img: 'src/assets/Schneelandschaft.png',
+        img: 'images/Schneelandschaft.png',
         width: 350
       },
       {
@@ -136,7 +137,7 @@ const pages = [
         zIndex: 2,
         left: 1000,
         top: 60,
-        img: 'src/assets/Lampe.png',
+        img: 'images/Lampe.png',
         width: 300,
         shadow: true
       },
@@ -145,7 +146,7 @@ const pages = [
         zIndex: 1,
         left: 500,
         top: -100,
-        img: 'src/assets/Katze_am_Fenster.png',
+        img: 'images/Katze_am_Fenster.png',
         width: 900
       },
       {
@@ -153,7 +154,7 @@ const pages = [
         zIndex: 1,
         left: 1350,
         top: 150,
-        img: 'src/assets/ornamente.png',
+        img: 'images/ornamente.png',
         width: 300
       },
       {
@@ -161,7 +162,7 @@ const pages = [
         zIndex: 1,
         left: 1750,
         top: 55,
-        img: 'src/assets/Katzengesicht.png',
+        img: 'images/Katzengesicht.png',
         width: 300
       },
       {
@@ -169,7 +170,7 @@ const pages = [
         zIndex: 1,
         left: 2150,
         top: 150,
-        img: 'src/assets/ornamente.png',
+        img: 'images/ornamente.png',
         width: 300
       },
       {
@@ -177,42 +178,22 @@ const pages = [
         zIndex: 1,
         left: 2350,
         top: 0,
-        img: 'src/assets/Schneelandschaft.png',
+        img: 'images/Schneelandschaft.png',
         width: 1100,
         shadow: true
       },
       {
-        speed: 0.2,
+        speed: 0.1,
         zIndex: 0,
-        left: 2350,
+        left: 2400,
         top: -100,
-        img: 'src/assets/Berge3.png',
+        img: 'images/Berge3.png',
         width: 800
       },
-      /*
-      {
-        speed: 0.25,
-        zIndex: 2,
-        left: 1200,
-        top: -75,
-        img: 'images/baum.png',
-        width: 1000,
-        effects: [
-          {
-            left: 800,
-            effect: 'animate__flipInY',
-          },
-          {
-            left: 1200,
-            effect: 'animate__hinge',
-          },
-        ],
-      },
-      */
     ],
   },
   {
-    title: 'Seite 2',
+    title: 'Das Spiel auf dem Eis',
     color: 'rgb(167, 109, 203)',
     texts: [
       {
@@ -244,7 +225,7 @@ const pages = [
       {
         speed: 0.05,
         zIndex: 1,
-        left: 400,
+        left: 700,
         top: 50,
         img: 'images/Baer1.png',
         width: 100
@@ -252,71 +233,39 @@ const pages = [
       {
         speed: 0.05,
         zIndex: 1,
-        left: 1255,
-        top: 50,
-        img: 'images/Baer2.png',
-        width: 100
-      },
-      {
-        speed: 0.05,
-        zIndex: 1,
-        left: 530,
+        left: 830,
         top: 20,
-        img: 'src/assets/Fuchs1.png',
-        width: 70
-      },
-      {
-        speed: 0.05,
-        zIndex: 1,
-        left: 1400,
-        top: 20,
-        img: 'src/assets/Fuchs2.png',
+        img: 'images/Fuchs1.png',
         width: 70
       },
       {
         speed: 0,
         zIndex: 0,
-        left: 60,
+        left: 360,
         top: -200,
-        img: 'src/assets/Curlingbahn.png',
-        width: 1000
-      },
-      {
-        speed: 0,
-        zIndex: 0,
-        left: 950,
-        top: -200,
-        img: 'src/assets/Curlingbahn.png',
+        img: 'images/Curlingbahn.png',
         width: 1000
       },
       {
         speed: 0.05,
         zIndex: 0,
-        left: 130,
+        left: 430,
         top: 90,
-        img: 'src/assets/Katze4.png',
+        img: 'images/Katze4.png',
         width: 200
       },
       {
         speed: 0.05,
         zIndex: 1,
-        left: 590,
+        left: 890,
         top: 50,
         img: 'images/Hirsch1.png',
         width: 100
       },
       {
-        speed: 0.05,
-        zIndex: 1,
-        left: 2170,
-        top: 50,
-        img: 'images/Hirsch2.png',
-        width: 100
-      },
-      {
         speed: 0,
         zIndex: 1,
-        left: 500,
+        left: 800,
         top: 200,
         img: 'images/Curlingstein1.png',
         width: 50
@@ -324,40 +273,138 @@ const pages = [
       {
         speed: 0,
         zIndex: 1,
-        left: 670,
+        left: 970,
         top: 190,
-        img: 'src/assets/Curlingstein2.png',
+        img: 'images/Curlingstein2.png',
         width: 50
       },
       {
         speed: 0,
         zIndex: 1,
-        left: 730,
+        left: 1030,
         top: 230,
-        img: 'src/assets/Curlingstein3.png',
+        img: 'images/Curlingstein3.png',
         width: 50
       },
       {
         speed: 0,
         zIndex: 1,
-        left: 570,
+        left: 870,
         top: 180,
-        img: 'src/assets/Curlingstein4.png',
+        img: 'images/Curlingstein4.png',
         width: 50
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 1300,
+        top: 150,
+        img: 'images/ornamente.png',
+        width: 300
+      },
+      {
+        speed: 0.1,
+        zIndex: 2,
+        left: 1490,
+        top: -50,
+        img: 'images/Hirsch1.png',
+        width: 500
+      },
+      {
+        speed: 0.1,
+        zIndex: 1,
+        left: 1600,
+        top: -200,
+        img: 'images/Baer1.png',
+        width: 700
+      },
+      {
+        speed: 0.02,
+        zIndex: 3,
+        left: 1650,
+        top: 50,
+        img: 'images/Fuchs1.png',
+        width: 500
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 2450,
+        top: 150,
+        img: 'images/ornamente.png',
+        width: 300
       },
       {
         speed: 0.1,
         zIndex: 3,
-        left: 530,
+        left: 2300,
         top: -290,
-        img: 'src/assets/Katze3.png',
-        width: 870
+        img: 'images/Katze3.png',
+        width: 870,
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 3200,
+        top: 150,
+        img: 'images/ornamente.png',
+        width: 300
+      },
+      {
+        speed: 0.1,
+        zIndex: 2,
+        left: 3200,
+        top: -50,
+        img: 'images/Hirsch2.png',
+        width: 500,
+        effects: [
+          {
+            left: 2720,
+            effect: 'animate__shakeY',
+          },
+        ],
+      },
+      {
+        speed: 0.1,
+        zIndex: 1,
+        left: 3300,
+        top: -200,
+        img: 'images/Baer2.png',
+        width: 700,
+        effects: [
+          {
+            left: 2700,
+            effect: 'animate__shakeY',
+          },
+        ],
+      },
+      {
+        speed: 0.02,
+        zIndex: 3,
+        left: 3600,
+        top: 50,
+        img: 'images/Fuchs2.png',
+        width: 500,
+        effects: [
+          {
+            left: 2710,
+            effect: 'animate__shakeY',
+          },
+        ],
       },
     ],
   },
   {
-    title: 'Seite 3',
+    title: 'Heimliches Training',
     color: 'rgb(203, 183, 109)',
+  },
+  {
+    title: 'Der große Versuch',
+    color: 'rgb(118, 218, 134)',
+  },
+  {
+    title: 'Minka zeigt, was sie kann',
+    color: 'rgb(209, 80, 181)',
   },
 ]
 
@@ -393,7 +440,9 @@ h1 {
   scrollbar-width: none;  /* Firefox */
 }
 .textblock {
-  margin: 20px;
+  margin: 20px auto;
   width: 400px;
+  text-align: center;
+  font-size: 20px;
 }
 </style>
