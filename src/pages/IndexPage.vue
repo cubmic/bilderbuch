@@ -27,10 +27,9 @@ h1 {
 .inhalt {
   width: 500px;
   font-size: 20px;
+  text-align: center;
 }
 .hase {
   width: 300px;
-  float: right;
-  transform: scaleX(-1);
 }
 </style>

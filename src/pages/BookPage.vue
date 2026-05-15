@@ -45,10 +45,14 @@
           transform: element.flipX ? 'scaleX(-1)' : '',
           filter: element.shadow ? `drop-shadow(${left * element.speed / 2}px 30px 10px rgba(0,0,0,0.5))` : '',
           borderRadius: element.round ? '50%' : '',
-          overflow: element.round ? 'hidden' : ''
+          overflow: element.round ? 'hidden' : '',
+          backgroundColor: element.backgroundColor || '',
+          width: element.width ? `${element.width}px` : '',
+          height: element.height ? `${element.height}px` : ''
         }"
       >
         <img
+          v-if="element.img"
           :src="element.img"
           :style="{
             width: `${element.width}px`
@@ -161,23 +165,58 @@ const pages = [
         zIndex: 1,
         left: 1350,
         top: 150,
-        img: 'images/ornamente.png',
+        img: 'images/ornament.png',
         width: 300
+      },
+      {
+        speed: 0,
+        zIndex: 0,
+        left: 1750,
+        top: 80,
+        width: 300,
+        height: 245,
+        backgroundColor: 'rgb(242, 240, 217)'
       },
       {
         speed: 0,
         zIndex: 1,
         left: 1750,
-        top: 55,
+        top: 140,
         img: 'images/Katzengesicht.png',
-        width: 300
+        width: 200
+      },
+      {
+        speed: 0.05,
+        zIndex: 2,
+        left: 1925,
+        top: 0,
+        width: 150,
+        height: 400,
+        backgroundColor: 'rgb(36, 149, 153)'
+      },
+      {
+        speed: 0.05,
+        zIndex: 2,
+        left: 1555,
+        top: 0,
+        width: 150,
+        height: 400,
+        backgroundColor: 'rgb(36, 149, 153)'
+      },
+      {
+        speed: 0.05,
+        zIndex: 3,
+        left: 1550,
+        top: -20,
+        img: 'images/fenster.png',
+        width: 600
       },
       {
         speed: 0,
         zIndex: 1,
         left: 2150,
         top: 150,
-        img: 'images/ornamente.png',
+        img: 'images/ornament.png',
         width: 300
       },
       {
@@ -306,7 +345,7 @@ const pages = [
         zIndex: 1,
         left: 1300,
         top: 150,
-        img: 'images/ornamente.png',
+        img: 'images/ornament.png',
         width: 300
       },
       {
@@ -338,7 +377,7 @@ const pages = [
         zIndex: 1,
         left: 2450,
         top: 150,
-        img: 'images/ornamente.png',
+        img: 'images/ornament.png',
         width: 300
       },
       {
@@ -354,7 +393,7 @@ const pages = [
         zIndex: 1,
         left: 3200,
         top: 150,
-        img: 'images/ornamente.png',
+        img: 'images/ornament.png',
         width: 300
       },
       {
@@ -366,7 +405,7 @@ const pages = [
         width: 500,
         effects: [
           {
-            left: 2720,
+            left: 3320,
             effect: 'animate__shakeY',
           },
         ],
@@ -380,7 +419,7 @@ const pages = [
         width: 700,
         effects: [
           {
-            left: 2700,
+            left: 3300,
             effect: 'animate__shakeY',
           },
         ],
@@ -394,10 +433,26 @@ const pages = [
         width: 500,
         effects: [
           {
-            left: 2710,
+            left: 3310,
             effect: 'animate__shakeY',
           },
         ],
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 4300,
+        top: 150,
+        img: 'images/ornament.png',
+        width: 300
+      },
+      {
+        speed: 0,
+        zIndex: 3,
+        left: 4500,
+        top: -290,
+        img: 'images/Katze3.png',
+        width: 870,
       },
     ],
   },
