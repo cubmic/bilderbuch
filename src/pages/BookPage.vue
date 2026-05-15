@@ -459,16 +459,106 @@ const pages = [
   {
     title: 'Heimliches Training',
     color: 'rgb(203, 183, 109)',
+    texts: [
+      {
+        left: 200,
+        text: `In den folgenden Nächten kam Minka heimlich zurück zum See. Der Mond schien auf das Eis und ließ es silbern glänzen.`,
+      },
+      {
+        left: 600,
+        text: `Ganz allein begann sie zu üben.`,
+      },
+      {
+        left: 1000,
+        text: `Sie schob kleine Steine über das Eis, übte das Gleichgewicht und versuchte zu verstehen, wie sich die Steine bewegen.`,
+      },
+      {
+        left: 1500,
+        text: `Manchmal rutschte sie aus und fiel hin. Manchmal lief alles schief. Doch Minka gab nicht auf.`,
+      },
+      {
+        left: 2000,
+        text: `Mit jeder Nacht wurde sie besser. Ihre Bewegungen wurden ruhiger, ihr Blick sicherer.`,
+      },
+      {
+        left: 2500,
+        text: `Und jedes Mal dachte sie: Ich schaffe das.`,
+      },
+    ],
     elements: []
   },
   {
     title: 'Der große Versuch',
     color: 'rgb(118, 218, 134)',
+    texts: [
+      {
+        left: 200,
+        text: `Eines Tages fehlte einem Team beim Curling ein Spieler.`,
+      },
+      {
+        left: 600,
+        text: `„Wir brauchen jemanden!“, rief ein Tier.`,
+      },
+      {
+        left: 1000,
+        text: `Minka trat vorsichtig näher. „Ich könnte helfen…“`,
+      },
+      {
+        left: 1500,
+        text: `Die anderen zögerten, doch schließlich nickten sie.`,
+      },
+      {
+        left: 2000,
+        text: `Das Spiel begann. Minka war nervös, aber sie erinnerte sich an ihr Training.`,
+      },
+      {
+        left: 2500,
+        text: `Dann kam der entscheidende Moment: der letzte Stein. Alles hing von ihr ab.`,
+      },
+      {
+        left: 2800,
+        text: `Minka atmete tief durch, konzentrierte sich und schob den Stein mit ruhiger Pfote über das Eis.`,
+      },
+      {
+        left: 3200,
+        text: `Alle schauten gespannt zu. Der Stein glitt, drehte sich leicht… und kam genau im Ziel zum Liegen.`,
+      },
+    ],
     elements: []
   },
   {
     title: 'Minka zeigt, was sie kann',
     color: 'rgb(209, 80, 181)',
+    texts: [
+      {
+        left: 200,
+        text: `Für einen Moment war es ganz still.`,
+      },
+      {
+        left: 600,
+        text: `Dann brach lauter Jubel aus.`,
+      },
+      {
+        left: 1000,
+        text: `Die Tiere konnten es kaum glauben. Die kleine Katze hatte den entscheidenden Wurf geschafft!`,
+      },
+      {
+        left: 1500,
+        text: `Der Bär trat vor und sagte: „Wir haben uns geirrt. Auch Katzen können Curling spielen.“`,
+      },
+      {
+        left: 2000,
+        text: `Minka lächelte stolz. Sie hatte nicht aufgegeben und an sich geglaubt.`,
+      },
+      {
+        left: 2500,
+        text: `Von diesem Tag an spielte sie oft mit den anderen Tieren auf dem Eis.`,
+      },
+      {
+        left: 3200,
+        text: `Und immer, wenn neue Schneeflocken vom Himmel fielen, erinnerte sich Minka daran, wie alles begonnen hatte - mit einem Blick aus dem Fenster.`,
+      },
+    ],
     elements: []
   },
 ]
