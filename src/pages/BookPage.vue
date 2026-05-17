@@ -485,7 +485,105 @@ const pages = [
         text: `Und jedes Mal dachte sie: Ich schaffe das.`,
       },
     ],
-    elements: []
+    elements: [
+     {
+        speed: 0,
+        zIndex: 1,
+        left: 360,
+        top: -200,
+        img: 'images/Curlingbahn.png',
+        width: 1000
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 1550,
+        top: -80,
+        img: 'images/Bäume.png',
+        width: 700
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 1500,
+        top: 200,
+        img: 'images/curlingbahn2.png',
+        width: 800
+      },
+      {
+        speed: 0,
+        zIndex: 3,
+        left: 1600,
+        top: 200,
+        img: 'images/Katze5.png',
+        width: 300
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 2550,
+        top: -80,
+        img: 'images/Bäume.png',
+        width: 700
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 2500,
+        top: 200,
+        img: 'images/curlingbahn2.png',
+        width: 800
+      },
+      {
+        speed: 0,
+        zIndex: 3,
+        left: 2600,
+        top: 150,
+        img: 'images/Katze1.png',
+        width: 220
+      },
+      {
+        speed: 0.04,
+        zIndex: 3,
+        left: 2710,
+        top: 285,
+        img: 'images/Curlingstein4.png',
+        width: 90
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 3550,
+        top: -80,
+        img: 'images/Bäume.png',
+        width: 700
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 3500,
+        top: 200,
+        img: 'images/curlingbahn2.png',
+        width: 800
+      },
+      {
+        speed: 0,
+        zIndex: 3,
+        left: 3600,
+        top: 150,
+        img: 'images/Katze1.png',
+        width: 220
+      },
+      {
+        speed: 0.125,
+        zIndex: 3,
+        left: 3710,
+        top: 285,
+        img: 'images/Curlingstein1.png',
+        width: 90
+      },
+    
+    ]
   },
   {
     title: 'Der große Versuch',
@@ -524,7 +622,144 @@ const pages = [
         text: `Alle schauten gespannt zu. Der Stein glitt, drehte sich leicht… und kam genau im Ziel zum Liegen.`,
       },
     ],
-    elements: []
+    elements: [
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 360,
+        top: -200,
+        img: 'images/Curlingbahn.png',
+        width: 1000
+      },
+      {
+        speed: 0,
+        zIndex: 3,
+        left: 450,
+        top: 50,
+        img: 'images/Katze4.png',
+        width: 200
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 900,
+        top: 90,
+        img: 'images/Fuchs1.png',
+        width: 100
+      },
+      {
+        speed: 0,
+        zIndex: 3,
+        left: 950,
+        top: 120,
+        img: 'images/Fuchs1.png',
+        width: 100
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 700,
+        top: 65,
+        img: 'images/Fuchs1.png',
+        width: 100
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 700,
+        top: 95,
+        img: 'images/Baer1.png',
+        width: 100
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 650,
+        top: 75,
+        img: 'images/Baer1.png',
+        width: 100
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 950,
+        top: 80,
+        img: 'images/Hirsch1.png',
+        width: 100
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 750,
+        top: 80,
+        img: 'images/Hirsch1.png',
+        width: 100
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 1700,
+        top: 100,
+        img: 'images/Fuchs1.png',
+        width: 250
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 1950,
+        top: 100,
+        img: 'images/Fuchs1.png',
+        width: 250
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 1800,
+        top: 100,
+        img: 'images/Hirsch1.png',
+        width: 250
+      },
+      {
+        speed: 0,
+        zIndex: 3,
+        left: 2500,
+        top: 50,
+        img: 'images/Katze3.png',
+        width: 400
+      },
+      {
+        speed: 0,
+        zIndex: 1,
+        left: 3000,
+        top: 200,
+        img: 'images/curlingbahn2.png',
+        width: 800
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 3050,
+        top: -80,
+        img: 'images/Bäume.png',
+        width: 700
+      },
+      {
+        speed: 0,
+        zIndex: 3,
+        left: 3100,
+        top: 150,
+        img: 'images/Katze1.png',
+        width: 220
+      },
+      {
+        speed: 0,
+        zIndex: 3,
+        left: 3210,
+        top: 285,
+        img: 'images/Curlingstein2.png',
+        width: 90
+      },
+    ]
   },
   {
     title: 'Minka zeigt, was sie kann',
@@ -559,7 +794,96 @@ const pages = [
         text: `Und immer, wenn neue Schneeflocken vom Himmel fielen, erinnerte sich Minka daran, wie alles begonnen hatte - mit einem Blick aus dem Fenster.`,
       },
     ],
-    elements: []
+    elements: [
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 360,
+        top: 100,
+        img: 'images/Fuchs1.png',
+        width: 250
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 610,
+        top: 100,
+        img: 'images/Fuchs1.png',
+        width: 250
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 460,
+        top: 100,
+        img: 'images/Hirsch1.png',
+        width: 250
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 1260,
+        top: 100,
+        img: 'images/Fuchs2.png',
+        width: 250
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 1510,
+        top: 100,
+        img: 'images/Fuchs2.png',
+        width: 250
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 1360,
+        top: 100,
+        img: 'images/Hirsch2.png',
+        width: 250
+      },
+      {
+        speed: 0,
+        zIndex: 2,
+        left: 1900,
+        top: 95,
+        img: 'images/Baer1.png',
+        width: 250
+      },
+      {
+        speed: 0,
+        zIndex: 3,
+        left: 2500,
+        top: 50,
+        img: 'images/Katze3.png',
+        width: 400
+      },
+     {
+        speed: 0,
+        zIndex: 1,
+        left: 3000,
+        top: -200,
+        img: 'images/Curlingbahn.png',
+        width: 1000
+      },
+      {
+        speed: 0,
+        zIndex: 3,
+        left: 4200,
+        top: 100,
+        img: 'images/Katze3.png',
+        width: 400
+      },
+      {
+        speed: 0,
+        zIndex: 3,
+        left: 4400,
+        top: 40,
+        img: 'images/Gedankenblase.png',
+        width: 250
+      },
+    ]
   },
 ]
 
