@@ -4,7 +4,7 @@
       <h1>Minka die Curlingkatze</h1>
       <img
         alt="Quasar logo"
-        src="images/Hase.png"
+        src="images/Titelbild.png"
         class="hase"
       />
       <p>
@@ -30,6 +30,8 @@ h1 {
   text-align: center;
 }
 .hase {
-  width: 300px;
+  margin-top: -150px;
+  margin-bottom: -50px;
+  width: 350px;
 }
 </style>

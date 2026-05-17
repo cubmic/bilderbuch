@@ -113,23 +113,23 @@ const pages = computed(() => {
       color: 'rgb(36, 149, 153)',
       texts: [
         {
-          left: 200,
-          text: `Minka lebte in einer Welt, in der Tiere sprechen, spielen und zusammenleben wie Menschen. Sie war eine kleine, weiße Katze mit weichem Fell und leuchtend blauen Augen.`,
+          left: 100,
+          text: `Minka lebte in einer Welt, in der Tiere sprechen, spielen und zusammenleben wie Menschen. Sie war eine kleine, niedliche Siamkatze mit weichem Fell und leuchtend blauen Augen.`,
         },
         {
           left: 600,
           text: `Am liebsten saß sie am Fenster ihres gemütlichen Hauses. Von dort aus konnte sie die verschneite Landschaft sehen.`,
         },
         {
-          left: 1000,
-          text: `An diesem Tag fielen dicke Schneeflocken vom Himmel. Sie tanzten in der Luft, drehten sich und glitzerten im Licht. Minka beobachtete jede einzelne ganz genau.`,
+          left: 1600,
+          text: `An diesem Tag sah die Landschaft besonders schön aus. Minka beobachtete sie aufmerksam.`,
         },
         {
           left: 1500,
           text: `„Wie schön der Winter ist“, murmelte sie leise und legte ihre Pfoten ans Fenster.`,
         },
         {
-          left: 2000,
+          left: 2800,
           text: `Doch plötzlich entdeckte sie in der Ferne etwas Neues: Auf einer großen Eisfläche bewegten sich Tiere hin und her. Neugierig sprang Minka vom Fenster und lief hinaus in den Schnee.`,
         },
       ],
@@ -252,26 +252,26 @@ const pages = computed(() => {
       texts: [
         {
           left: 200,
-          text: `Als Minka näher kam, sah sie, was die Tiere taten. Sie spielten Curling auf einem gefrorenen See. Große Steine glitten über das Eis, während andere Tiere eifrig davor herfegten.`,
+          text: `Als Minka näher kam, sah sie, was die Tiere taten. Sie spielten Curling auf einem gefrorenen See. Große Steine glitten über das Eis, während die Tiere sich gegenseitig anfeuerten.`,
         },
         {
           left: 600,
           text: `Es sah spannend aus!`,
         },
         {
-          left: 1000,
+          left: 1800,
           text: `Minka setzte sich an den Rand und beobachtete das Spiel. Schließlich fasste sie sich ein Herz und rief: „Darf ich auch mitspielen?“`,
         },
         {
-          left: 1500,
+          left: 2900,
           text: `Doch kaum hatte sie das gesagt, begannen einige Tiere zu lachen.`,
         },
         {
-          left: 2000,
+          left: 3300,
           text: `„Du bist viel zu klein!“ rief ein Elch. „Der Stein ist schwerer als du!“ brummte ein Bär.`,
         },
         {
-          left: 2500,
+          left: 4500,
           text: `Minka senkte den Kopf. Ihr Herz fühlte sich schwer an. Aber tief in ihr drin wuchs ein Gedanke: Ich werde es ihnen zeigen.`,
         },
       ],
@@ -351,7 +351,23 @@ const pages = computed(() => {
         {
           speed: 0,
           zIndex: 1,
-          left: 1300,
+          left: 1350,
+          top: 150,
+          img: 'images/ornament.png',
+          width: 300
+        },
+         {
+          speed: 0.1,
+          zIndex: 3,
+          left: 1250,
+          top: -290,
+          img: 'images/Katze3.png',
+          width: 870,
+        },
+        {
+          speed: 0,
+          zIndex: 1,
+          left: 2050,
           top: 150,
           img: 'images/ornament.png',
           width: 300
@@ -359,7 +375,7 @@ const pages = computed(() => {
         {
           speed: 0.1,
           zIndex: 2,
-          left: 1490,
+          left: 2190,
           top: -50,
           img: 'images/Hirsch1.png',
           width: 500
@@ -367,7 +383,7 @@ const pages = computed(() => {
         {
           speed: 0.1,
           zIndex: 1,
-          left: 1600,
+          left: 2300,
           top: -200,
           img: 'images/Baer1.png',
           width: 700
@@ -375,26 +391,10 @@ const pages = computed(() => {
         {
           speed: 0.02,
           zIndex: 3,
-          left: 1650,
+          left: 2550,
           top: 50,
           img: 'images/Fuchs1.png',
           width: 500
-        },
-        {
-          speed: 0,
-          zIndex: 1,
-          left: 2450,
-          top: 150,
-          img: 'images/ornament.png',
-          width: 300
-        },
-        {
-          speed: 0.1,
-          zIndex: 3,
-          left: 2300,
-          top: -290,
-          img: 'images/Katze3.png',
-          width: 870,
         },
         {
           speed: 0,
@@ -469,27 +469,27 @@ const pages = computed(() => {
       color: 'rgb(203, 183, 109)',
       texts: [
         {
-          left: 200,
+          left: 800,
           text: `In den folgenden Nächten kam Minka heimlich zurück zum See. Der Mond schien auf das Eis und ließ es silbern glänzen.`,
         },
         {
-          left: 600,
+          left: 1200,
           text: `Ganz allein begann sie zu üben.`,
         },
         {
-          left: 1000,
-          text: `Sie schob kleine Steine über das Eis, übte das Gleichgewicht und versuchte zu verstehen, wie sich die Steine bewegen.`,
-        },
-        {
-          left: 1500,
+          left: 1600,
           text: `Manchmal rutschte sie aus und fiel hin. Manchmal lief alles schief. Doch Minka gab nicht auf.`,
         },
         {
-          left: 2000,
+          left: 2200,
+          text: `Sie schob kleine Steine über das Eis, übte das Gleichgewicht und versuchte zu verstehen, wie sich die Steine bewegen.`,
+        },
+        {
+          left: 2800,
           text: `Mit jeder Nacht wurde sie besser. Ihre Bewegungen wurden ruhiger, ihr Blick sicherer.`,
         },
         {
-          left: 2500,
+          left: 3300,
           text: `Und jedes Mal dachte sie: Ich schaffe das.`,
         },
       ],
@@ -508,6 +508,29 @@ const pages = computed(() => {
               effect: 'animate__fadeIn',
             },
           ],
+        },
+        {
+          speed: 0,
+          zIndex: 1,
+          left: 430,
+          top: 90,
+          img: 'images/Katze4.png',
+          width: 200,
+          effects: [
+            {
+              left: 10,
+              initial: 'animate__fadeIn-initial',
+              effect: 'animate__fadeIn',
+            },
+          ],
+        },
+        {
+          speed: 0,
+          zIndex: 1,
+          left: 1300,
+          top: 150,
+          img: 'images/ornament.png',
+          width: 300
         },
         {
           speed: 0,
@@ -545,6 +568,14 @@ const pages = computed(() => {
               effect: 'animate__slideRightABit',
             },
           ],
+        },
+        {
+          speed: 0,
+          zIndex: 1,
+          left: 2280,
+          top: 150,
+          img: 'images/ornament.png',
+          width: 300
         },
         {
           speed: 0,
@@ -590,6 +621,14 @@ const pages = computed(() => {
               effect: 'animate__slideRightABit100',
             },
           ],
+        },
+        {
+          speed: 0,
+          zIndex: 1,
+          left: 3300,
+          top: 150,
+          img: 'images/ornament.png',
+          width: 300
         },
         {
           speed: 0,
@@ -751,8 +790,32 @@ const pages = computed(() => {
         },
         {
           speed: 0,
+          zIndex: 1,
+          left: 1350,
+          top: 150,
+          img: 'images/ornament.png',
+          width: 300
+        },
+        {
+          speed: 0,
+          zIndex: 3,
+          left: 1500,
+          top: 50,
+          img: 'images/Katze3.png',
+          width: 400
+        },
+        {
+          speed: 0,
+          zIndex: 1,
+          left: 1850,
+          top: 150,
+          img: 'images/ornament.png',
+          width: 300
+        },
+        {
+          speed: 0,
           zIndex: 2,
-          left: 1700,
+          left: 2200,
           top: 100,
           img: 'images/Fuchs1.png',
           width: 250
@@ -760,7 +823,7 @@ const pages = computed(() => {
         {
           speed: 0,
           zIndex: 2,
-          left: 1950,
+          left: 2450,
           top: 100,
           img: 'images/Fuchs1.png',
           width: 250
@@ -768,18 +831,18 @@ const pages = computed(() => {
         {
           speed: 0,
           zIndex: 2,
-          left: 1800,
+          left: 2300,
           top: 100,
           img: 'images/Hirsch1.png',
           width: 250
         },
         {
           speed: 0,
-          zIndex: 3,
-          left: 2500,
-          top: 50,
-          img: 'images/Katze3.png',
-          width: 400
+          zIndex: 1,
+          left: 2700,
+          top: 150,
+          img: 'images/ornament.png',
+          width: 300
         },
         {
           speed: 0,
@@ -845,20 +908,20 @@ const pages = computed(() => {
           text: `Die Tiere konnten es kaum glauben. Die kleine Katze hatte den entscheidenden Wurf geschafft!`,
         },
         {
-          left: 1500,
+          left: 2000,
           text: `Der Bär trat vor und sagte: „Wir haben uns geirrt. Auch Katzen können Curling spielen.“`,
         },
         {
-          left: 2000,
+          left: 2800,
           text: `Minka lächelte stolz. Sie hatte nicht aufgegeben und an sich geglaubt.`,
         },
         {
-          left: 2500,
+          left: 4000,
           text: `Von diesem Tag an spielte sie oft mit den anderen Tieren auf dem Eis.`,
         },
         {
-          left: 3200,
-          text: `Und immer, wenn neue Schneeflocken vom Himmel fielen, erinnerte sich Minka daran, wie alles begonnen hatte - mit einem Blick aus dem Fenster.`,
+          left: 4500,
+          text: `Und immer, wenn Minka aus dem Fenster schaut, erinnerte sie sich daran, wie alles begonnen hatte - mit einem Blick aus dem Fenster.`,
         },
       ],
       elements: [
@@ -888,8 +951,16 @@ const pages = computed(() => {
         },
         {
           speed: 0,
+          zIndex: 1,
+          left: 850,
+          top: 150,
+          img: 'images/ornament.png',
+          width: 300
+        },
+        {
+          speed: 0,
           zIndex: 2,
-          left: 1260,
+          left: 1180,
           top: 100,
           img: 'images/Fuchs2.png',
           width: 250,
@@ -903,7 +974,7 @@ const pages = computed(() => {
         {
           speed: 0,
           zIndex: 2,
-          left: 1510,
+          left: 1430,
           top: 100,
           img: 'images/Fuchs2.png',
           width: 250,
@@ -917,7 +988,7 @@ const pages = computed(() => {
         {
           speed: 0,
           zIndex: 2,
-          left: 1360,
+          left: 1280,
           top: 100,
           img: 'images/Hirsch2.png',
           width: 250,
@@ -930,24 +1001,48 @@ const pages = computed(() => {
         },
         {
           speed: 0,
-          zIndex: 2,
+          zIndex: 1,
           left: 1700,
+          top: 150,
+          img: 'images/ornament.png',
+          width: 300
+        },
+        {
+          speed: 0,
+          zIndex: 2,
+          left: 1800,
           top: -200,
           img: 'images/Baer1.png',
           width: 800
         },
         {
           speed: 0,
+          zIndex: 1,
+          left: 2550,
+          top: 150,
+          img: 'images/ornament.png',
+          width: 300
+        },
+        {
+          speed: 0,
           zIndex: 3,
-          left: 2500,
+          left: 2800,
           top: 50,
           img: 'images/Katze3.png',
           width: 400
         },
-      {
+        {
           speed: 0,
           zIndex: 1,
-          left: 3000,
+          left: 3200,
+          top: 150,
+          img: 'images/ornament.png',
+          width: 300
+        },
+        {
+          speed: 0,
+          zIndex: 1,
+          left: 3500,
           top: -200,
           img: 'images/Curlingbahn.png',
           width: 1000
@@ -955,18 +1050,90 @@ const pages = computed(() => {
         {
           speed: 0,
           zIndex: 3,
-          left: 4200,
-          top: 100,
+          left: 4100,
+          top: 95,
           img: 'images/Katze3.png',
-          width: 400
+          width: 200
+        },
+        {
+          speed: 0,
+          zIndex: 2,
+          left: 4040,
+          top: 90,
+          img: 'images/Fuchs1.png',
+          width: 100
         },
         {
           speed: 0,
           zIndex: 3,
-          left: 4400,
-          top: 40,
+          left: 4090,
+          top: 120,
+          img: 'images/Fuchs1.png',
+          width: 100
+        },
+        {
+          speed: 0,
+          zIndex: 2,
+          left: 3840,
+          top: 65,
+          img: 'images/Fuchs1.png',
+          width: 100
+        },
+        {
+          speed: 0,
+          zIndex: 2,
+          left: 3840,
+          top: 95,
+          img: 'images/Baer1.png',
+          width: 100
+        },
+        {
+          speed: 0,
+          zIndex: 2,
+          left: 3790,
+          top: 75,
+          img: 'images/Baer1.png',
+          width: 100
+        },
+        {
+          speed: 0,
+          zIndex: 2,
+          left: 4090,
+          top: 80,
+          img: 'images/Hirsch1.png',
+          width: 100
+        },
+        {
+          speed: 0,
+          zIndex: 2,
+          left: 3890,
+          top: 80,
+          img: 'images/Hirsch1.png',
+          width: 100
+        },
+        {
+          speed: 0,
+          zIndex: 1,
+          left: 4500,
+          top: 150,
+          img: 'images/ornament.png',
+          width: 300
+        },
+        {
+          speed: 0,
+          zIndex: 3,
+          left: 4700,
+          top: 0,
+          img: 'images/Katze3.png',
+          width: 600
+        },
+        {
+          speed: 0,
+          zIndex: 4,
+          left: 5000,
+          top: 0,
           img: 'images/Gedankenblase.png',
-          width: 250
+          width: 350
         },
       ]
     },
